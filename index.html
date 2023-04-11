@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>세월호 스토리 웹사이트</title>
+  <style>
+    /* 배경색 */
+    body {
+      background-color: #ffd800;
+      padding: 0;
+    }
+    /* 네모 틀 */
+    .box {
+      width: 900px;
+      height: 600px;
+      border: 1px solid black;
+      background-color: rgb(255, 255, 255);
+      margin: 40px auto 0;
+      padding-top: 10px;
+    }
+    /* 스타일 태그 추가 */
+    audio::-webkit-media-controls {
+      display:none !important;
+    }
+    audio::-webkit-media-controls-enclosure {
+      display:none !important;
+    }
+    audio::-webkit-media-controls-panel {
+      display:none !important;
+    }
+    audio::-webkit-media-controls-play-button {
+      display:none !important;
+    }
+    .audio-container {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    audio {
+      width: 100%;
+    }
+    .text-wrapper {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="text-wrapper">
+      <h1 style="color: rgb(0, 0, 0); font-size: 2em;">여러분들은, 무사히 탈출 하셨습니다!</h1>
+      <h2 class="text">오늘 푼 문제들 잊지 마시고, 또 한번의 아픔을 겪지 않게 노력합시다!</h2>
+      <div class="audio-container">
+        <!-- mp3 파일 경로 수정 -->
+        <audio controls>
+          <source src="환호.mp3" type="audio/mp3">
+        </audio>
+        <audio autoplay controls style="display:none;">
+          <source src="환호.mp3" type="audio/mp3">
+        </audio>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
